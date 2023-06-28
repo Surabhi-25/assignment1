@@ -1,0 +1,46 @@
+a='surabhi'
+for i in a:
+    if i=="a":
+       continue
+    else:
+        print(i)
+else:
+    print("this has CONITNUE")
+
+a='surabhi'
+for i in a:
+    if i=="a":
+       break
+    else:
+        print(i)
+else:
+    print("this has BREAK")
+
+a='surabhi'
+for i in a:
+    if i=="a":
+       pass
+    else:
+        print(i)
+else:
+    print("this has PASS")
+
+a='surabhi'
+for i in a:
+    if i=="a":
+       continue
+    else:
+        print(i)
+else:
+    print("this has break")
+
+i=1
+while i<=10:
+    if i==5:
+        continue
+    else:
+        print(i)
+    i+=1
+else:
+    print("this has continue")
+
