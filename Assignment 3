@@ -1,0 +1,13 @@
+n1=int(input("Enter num1: "))
+n2=int(input("Enter num2: "))
+n=int(input("Enter 1-ADD 2-DIVIDE 3-MULTIPLY 4-SUBTRACT "))
+if n==1:
+    print("Addition of numbers is",n1+n2)
+elif n==2:
+    print("Division of numbers is",n1/n2)
+elif n==3:
+    print("Multiplication of numbers is",n1*n2)
+elif n==4:
+    print("Subtraction of numbers is",n1-n2)
+else: 
+    print("Invalid number")
