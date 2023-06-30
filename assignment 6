@@ -1,0 +1,43 @@
+def ds(roll_no, name):
+    # Creating data structures
+    lst = [roll_no, name]
+    tpl = (roll_no, name)
+    st = {roll_no, name}
+    dct = {'Roll No': roll_no, 'Name': name}
+
+    # Modifying values during runtime
+    print("Before modification:")
+    print("List:", lst)
+    print("Tuple:", tpl)
+    print("Set:", st)
+    print("Dictionary:", dct)
+    print()
+
+    new_roll_no = input("Enter new Roll No: ")
+    new_name = input("Enter new Name: ")
+
+    lst[0] = new_roll_no
+    lst[1] = new_name
+    tpl = (new_roll_no, new_name)
+    st.remove(roll_no)
+    st.add(new_roll_no)
+    st.remove(name)
+    st.add(new_name)
+    dct['Roll No'] = new_roll_no
+    dct['Name'] = new_name
+
+    # Printing modified values
+    print("\nAfter modification:")
+    print("List:", lst)
+    print("Tuple:", tpl)
+    print("Set:", st)
+    print("Dictionary:", dct)
+
+    # Deleting data structures
+    del lst
+    del tpl
+    del st
+    del dct
+
+# Example usage
+ds(100, "surabhi")
