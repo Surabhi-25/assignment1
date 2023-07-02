@@ -1,0 +1,15 @@
+def appendfile(name, class_name, file="co_b1.co_b1.txt"):
+    try:
+        with open(file, "a") as f:
+            f.writelines([ name + "\n", class_name + "\n"])
+        
+        with open(file, "r") as f:
+            data = f.readlines()
+            print("Data in the file:")
+            print("".join(data))
+    
+    except IOError as e:
+        print("An error occurred while accessing the file:", e)
+
+# Example usage:
+appendfile( "John Doe", "10th")
