@@ -1,0 +1,2 @@
+class EmployeeManagementException(Exception):
+    pass
