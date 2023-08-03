@@ -1,7 +1,7 @@
 
-a=10;
-b=20;
-c=30;
+a=10
+b=20
+c=30
 average=(a+b+c)/3
 
-print("average is: ", average)
+print(f"average is of {a}, {b}, {c} is: {average} ")
