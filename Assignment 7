@@ -1,7 +1,7 @@
-def appendfile(name, class_name, file="co_b1.co_b1.txt"):
+def appendfile(roll, name, class_name, file="co_b1.co_b1.txt"):
     try:
         with open(file, "a") as f:
-            f.writelines([ name + "\n", class_name + "\n"])
+            f.writelines([ roll+ "\n" +name + "\n", class_name + "\n"])
         
         with open(file, "r") as f:
             data = f.readlines()
@@ -12,4 +12,4 @@ def appendfile(name, class_name, file="co_b1.co_b1.txt"):
         print("An error occurred while accessing the file:", e)
 
 # Example usage:
-appendfile( "John Doe", "10th")
+appendfile( "1","Surabhi Mane", "10th")
